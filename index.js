@@ -13,9 +13,9 @@ dotenv.config();
 const port = process.env.PORT || 3000;
 
 const username = process.env.MONGODB_USERNAME;
-const password = process.env.MONGODB_PASSWORD;
+const pass = process.env.MONGODB_PASSWORD;
 
-mongoose.connect(`mongodb+srv://${username}:${password}@registration-form.sa2cpnz.mongodb.net/registrartionFormDB`);
+mongoose.connect(`mongodb+srv://${username}:${pass}@registration-form.sa2cpnz.mongodb.net/registrartionFormDB`);
 // Registration Schema
 const registrationSchema = new mongoose.Schema({
     name : String,
